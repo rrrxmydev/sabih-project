@@ -12,7 +12,7 @@ function App() {
           <h1 className="text-3xl font-semibold text-blue1 mb-6">مواقيت الصلاة</h1>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="bg-[#faffdf] flex flex-col items-center justify-center w-[80%] rounded-md pt-8 mb-5 ">
+          <div className="bg-[#242728] flex flex-col items-center justify-center w-[80%] rounded-md pt-8 mb-5 shadow-[#000] shadow-md md:w-[40%]">
               <Salat/>
               <Salat/>
               <Salat/>
