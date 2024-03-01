@@ -1,10 +1,10 @@
 const HijriDate = ()=>{
     return(
         <div dir="rtl" className="
-            translate-x-[-27%] translate-y-[55%]
+            translate-x-[-27%] translate-y-[35%]
             // meduim
             md:flex md:justify-stretch
-            md:translate-y-[180%]
+            md:translate-y-[140%]
         ">
             <h1 className="font-semibold text-6xl tracking-tighter md:text-7xl md:mx-4">12</h1>
             <h1 className="font-semibold text-5xl tracking-tighter md:text-7xl md:mx-4">شعبان</h1>
