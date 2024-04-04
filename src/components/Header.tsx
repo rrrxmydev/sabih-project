@@ -5,9 +5,19 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
+// import { useState } from "react";
+
+type darkModeProps = {
+    darkMode:boolean,
+    setDarkMode:React.Dispatch<React.SetStateAction<boolean>>
+}
 
 
-const Header = ()=>{
+
+const Header = ({darkMode,setDarkMode}:darkModeProps)=>{
+
+
+
         const MaterialUISwitch = styled(Switch)(({ theme }) => ({
             width: 62,
             height: 34,
@@ -54,18 +64,27 @@ const Header = ()=>{
             borderRadius: 20 / 2,
             },
         }));
+
+        function handleClick(){
+            darkMode?setDarkMode(false):setDarkMode(true);
+        }
+
+
+        
+
         return(
-        <div className="">
-            <div className="w-[200%] h-[500px] bg-blue4 rounded-[100%] translate-x-[-25%] translate-y-[-15%] text-[#160927] dark:bg-blue3">
+         <div>
+            <div className="w-[200%] h-[500px] md:h-[600px] bg-gradient-to-b from-blue4 to-blue3 rounded-[100%] translate-x-[-25%] translate-y-[-15%] text-[#160927] dark:bg-blue3">
                 <div className="  translate-y-[115%] translate-x-[67%] md:translate-x-[72%]">
                     <MenuRoundedIcon  className="md:translate-y-[-53%]" sx={{fontSize:"50px",color:"white",}}/>
                     <h1 className="text-[#FFFF] font-semibold  text-3xl translate-x-[-37%] translate-y-[-135%] font-ArefRuqaa md:text-6xl md:translate-x-[-42%] md:translate-y-[-135%]">سبح</h1>
                 </div>
-                <FormControlLabel
-                    control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-                    label=""
-                    className="translate-x-[630%] translate-y-[26%] md:translate-x-[2330%] md:translate-y-[-15%]"
-                />
+                    <FormControlLabel
+                        control={<MaterialUISwitch sx={{ m: 1 }} onClick={handleClick} />}
+                        label=""
+                        className="translate-x-[630%] translate-y-[26%] md:translate-x-[2100%] md:translate-y-[-15%]"
+                    />
+               
                 <HijriDate/>
                 <RamadanMiladiDate/>
                 <SalatTimer/>
