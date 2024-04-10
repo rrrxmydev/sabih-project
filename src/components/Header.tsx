@@ -5,18 +5,17 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
-// import { useState } from "react";
-
-type darkModeProps = {
-    darkMode:boolean,
-    setDarkMode:React.Dispatch<React.SetStateAction<boolean>>
-}
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { useContext } from "react";
+import { DarkModeContext } from "../../contexts/DarkModeContext";
+import {NavBarPropsType} from '../types/NavBarPropsType';
 
 
 
-const Header = ({darkMode,setDarkMode}:darkModeProps)=>{
 
-
+const Header = ({setOpenNav,openNav}:NavBarPropsType)=>{
+    
+    const darkMode = useContext(DarkModeContext);
 
         const MaterialUISwitch = styled(Switch)(({ theme }) => ({
             width: 62,
@@ -66,17 +65,15 @@ const Header = ({darkMode,setDarkMode}:darkModeProps)=>{
         }));
 
         function handleClick(){
-            darkMode?setDarkMode(false):setDarkMode(true);
+            darkMode.state?darkMode.setState(false):darkMode.setState(true);
         }
-
-
-        
-
         return(
          <div>
             <div className="w-[200%] h-[500px] md:h-[600px] bg-gradient-to-b from-blue4 to-blue3 rounded-[100%] translate-x-[-25%] translate-y-[-15%] text-[#160927] dark:bg-blue3">
-                <div className="  translate-y-[115%] translate-x-[67%] md:translate-x-[72%]">
-                    <MenuRoundedIcon  className="md:translate-y-[-53%]" sx={{fontSize:"50px",color:"white",}}/>
+                <div className="  translate-y-[115%] translate-x-[67%] md:translate-x-[72%] cursor-pointer" onClick={()=>{
+                    openNav ?setOpenNav(false):setOpenNav(true);
+                }}>
+                        {openNav ?<CloseRoundedIcon className="md:translate-y-[-53%]" sx={{fontSize:"50px",color:"white",}}/> :<MenuRoundedIcon  className="md:translate-y-[-53%]" sx={{fontSize:"50px",color:"white",}}/>}
                     <h1 className="text-[#FFFF] font-semibold  text-3xl translate-x-[-37%] translate-y-[-135%] font-ArefRuqaa md:text-6xl md:translate-x-[-42%] md:translate-y-[-135%]">سبح</h1>
                 </div>
                     <FormControlLabel
@@ -88,7 +85,6 @@ const Header = ({darkMode,setDarkMode}:darkModeProps)=>{
                 <HijriDate/>
                 <RamadanMiladiDate/>
                 <SalatTimer/>
-                
             </div>
 
         </div>

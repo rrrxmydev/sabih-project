@@ -1,0 +1,12 @@
+.nav{
+    @apply  relative cursor-pointer tracking-[1px] hover:text-blue1
+}
+
+.nav::after{
+    @apply content-[''] bg-blue1 h-[3px] w-[0%] right-0
+     -bottom-[5px] rounded-xl absolute duration-300
+}
+
+.nav:hover::after{
+    @apply w-[100%]
+}
