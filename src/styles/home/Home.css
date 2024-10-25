@@ -1,0 +1,19 @@
+.HomeContainer{
+    @apply font-changa dark:bg-gradient-to-b from-blue1 from-50% to-blue2 md:h-[100%] overflow-hidden;
+}
+
+.salatHeader{
+    @apply flex items-center justify-center;
+}
+
+.salatHeader > h1{
+    @apply text-3xl font-semibold text-blue1 mb-6 dark:text-[#FFFF];
+}
+
+.center{
+    @apply flex flex-col justify-center items-center;
+}
+
+.salawatContainer{
+    @apply bg-[#242728]  z-0 flex flex-col items-center justify-center w-[80%] rounded-md pt-8 mb-5 shadow-[#1d1f2694] shadow-md md:w-[40%] dark:bg-[#191e35] dark:bg-opacity-45 backdrop-blur-3xl dark:shadow-none;
+}

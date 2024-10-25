@@ -10,3 +10,11 @@
 .nav:hover::after{
     @apply w-[100%]
 }
+
+.navOpened{
+ @apply fixed bottom-[560px] w-full md:bottom-[450px]
+}
+
+.navClosed{
+    @apply fixed translate-y-[600px] md:translate-y-[600px] w-full transition-opacity;
+}

@@ -1,5 +1,5 @@
 export type thikrType ={
     script:string,
-    info:string | null,
+    fadl:string | null,
     repete:number,
 }

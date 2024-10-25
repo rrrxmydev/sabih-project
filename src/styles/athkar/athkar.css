@@ -1,0 +1,22 @@
+.athkar_Title{
+    @apply text-5xl font-bold font-changa text-blue1 translate-x-[40%] translate-y-[90%] dark:text-[#FFFF] md:translate-x-[46%];
+}
+
+.navBarContainer{
+    @apply translate-y-[-10%] translate-x-[85%] md:translate-y-[30%] md:translate-x-[92%] cursor-pointer;
+}
+.resetButton{
+    @apply font-changa text-white p-3 w-[200px] md:w-[100px] bg-blue2 rounded-md md:translate-x-5 translate-x-[110px] translate-y-[30px];
+}
+
+.goBackButton{
+    @apply bg-blue2 text-[#FFFF] w-[50px] h-[50px] rounded-[1400px] relative right-[180px] md:right-[60px] bottom-[55px] md:bottom-[120px] dark:text-blue1 dark:bg-[#FFFF];
+}
+
+.selectThikr{
+    @apply w-[70%] bg-blue4 text-blue1  font-changa font-bold cursor-pointer h-[40px]  ml-11 mt-16 rounded-lg outline-none
+    dark:bg-blue2 dark:text-[#FFFF]
+    md:w-[60%] md:translate-x-[10%]
+    translate-x-[7%]
+    pl-3;
+}

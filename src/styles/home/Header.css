@@ -1,0 +1,11 @@
+.con{
+    @apply w-[200%] h-[500px] md:h-[600px] bg-gradient-to-b from-blue4 to-blue3 rounded-[100%] translate-x-[-25%] translate-y-[-15%] text-[#160927] dark:bg-blue3;
+}
+
+.Menu{
+    @apply translate-y-[115%] translate-x-[67%] md:translate-x-[72%] cursor-pointer;
+}
+
+.Menu > h1{
+   @apply text-[#FFFF] font-semibold  translate-x-[-37%] translate-y-[-135%] font-ArefRuqaa md:text-6xl md:translate-x-[-42%] md:translate-y-[-115%] text-7xl;
+}

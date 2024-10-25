@@ -1,0 +1,25 @@
+.fadl{
+    @apply flex flex-col justify-start rounded-lg font-changa w-[50%] translate-x-1 translate-y-2 h-32 bg-blue4 text-blue1 font-bold p-2
+            dark:bg-blue2 dark:text-[#FFFF]
+            md:w-[30%]
+}
+
+.scriptContainer{
+    @apply border-blue1 border-2 rounded-md w-[80%] translate-x-[13%] flex flex-col justify-center items-center mb-[40px] md:w-[50%] md:translate-x-[53%] dark:border-[#FFFF] z-0 mt-10
+}
+
+.script{
+    @apply w-full flex justify-center flex-col items-center p-5 relative bottom-1 left-2 md:p-4;
+}
+
+.script > p {
+    @apply text-blue2 text-xl font-semibold md:text-2xl dark:dark:text-[#FFFF];
+}
+
+.fadlRepeteContainer{
+    @apply flex flex-row justify-center items-center translate-y-[-30%];
+}
+
+.repete{
+    @apply flex flex-col justify-center items-center translate-y-[93%] rounded-lg font-changa w-[28%] h-32 bg-blue4 text-blue1 font-bold cursor-pointer p-2 relative bottom-[111px] dark:bg-blue2 dark:text-[#FFFF] md:w-[10%];
+}

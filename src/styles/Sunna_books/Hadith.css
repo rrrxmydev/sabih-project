@@ -1,0 +1,32 @@
+.hadithContainerr{
+    @apply border-blue1
+    border-2
+    rounded-md
+    w-[80%]
+    flex
+    flex-col
+    justify-center
+    items-center
+    mb-[40px]
+  dark:border-[#FFFF] ;
+}
+
+.pageContainer{
+    @apply flex flex-col justify-center items-center overflow-x-hidden;
+}
+.BookMarkContainer{
+    @apply translate-x-[190px] md:translate-x-[600px] translate-y-10;
+}
+.hadithNumberContainer{
+    @apply bg-[#FCFFF4]  w-[160px] md:w-[190px] flex items-center justify-center relative bottom-4 dark:bg-blue1;
+}
+
+.hadithNumber{
+    @apply font-semibold text-xl text-blue1 md:text-2xl dark:text-[#FFFF];
+}
+.scriptContainerr{
+    @apply w-full flex justify-center p-3 relative bottom-4 left-2 md:p-4;
+}
+.scirpt{
+    @apply  text-blue2 text-xl font-semibold md:text-2xl dark:dark:text-[#FFFF];
+}

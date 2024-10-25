@@ -1,0 +1,31 @@
+.DuaaContainer{
+    @apply border-blue1
+    border-2
+    rounded-md
+    w-[80%]
+    translate-x-[13%]
+    flex
+    flex-col
+    justify-center
+    items-center
+    mb-[40px]
+    md:w-[50%]
+    md:translate-x-[53%]
+    dark:border-[#FFFF] z-0;
+}
+
+.titleContainer{
+    @apply bg-[#FCFFF4] w-[100px] md:w-[120px]  flex items-center justify-center relative bottom-4 dark:bg-blue1;
+}
+
+.Title{
+    @apply font-semibold text-xl text-blue1 md:text-2xl dark:text-[#FFFF];
+}
+
+.script_Container{
+    @apply  w-full p-4 relative bottom-4 left-2 md:p-4 flex justify-center items-center;
+}
+
+.script{
+    @apply text-blue2 text-xl font-semibold md:text-2xl dark:dark:text-[#FFFF];
+}

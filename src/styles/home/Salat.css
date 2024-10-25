@@ -1,0 +1,23 @@
+.containerStyle{
+    @apply 
+        translate-y-[-25%]
+        md:translate-x-[30%]
+        md:translate-y-[150%]
+
+}
+
+.containerStyle :first-child {
+    @apply text-xl font-bold translate-x-[-27%] md:text-2xl md:translate-y-[-800%] md:translate-x-[-70%];
+}
+
+.durationStyle{
+    @apply text-4xl font-semibold translate-x-[-40%] translate-y-[23%] md:text-6xl md:translate-x-[-78%] md:translate-y-[-400%]
+}
+
+.Salat{
+    @apply bg-[#FFFF] w-[40%] rounded-md p-[10px] mb-[20px] flex flex-col justify-center items-center md:w-[35%]  hover:transition-all hover:ease-in-out   hover:scale-105 duration-500 cursor-pointer;
+}
+
+.Salat > h2{
+    @apply font-semibold text-xl text-blue1 md:text-2xl;
+}

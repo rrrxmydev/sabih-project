@@ -1,0 +1,7 @@
+.cont{
+    @apply translate-x-[-27%] translate-y-[35%] md:translate-y-[10%];
+}
+
+.cont > h1{
+    @apply font-semibold text-6xl tracking-tighter md:text-8xl md:mx-4;
+}
